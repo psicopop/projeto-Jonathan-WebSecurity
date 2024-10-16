@@ -1,0 +1,7 @@
+<div class="home-container">
+  <h2>Home</h2>
+  <button (click)="navigateTo('profile')">Profile</button>
+  <button *ngIf="isAdmin()" (click)="navigateTo('adm')">Adm</button>
+  <button *ngIf="isGerenteOrAdmin()" (click)="navigateTo('gerente')">Gerente</button>
+  <button (click)="logout()">Logout</button>
+</div>
